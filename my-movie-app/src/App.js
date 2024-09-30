@@ -1,16 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 import Content from './Components/content';
+import Header from './Components/header';//importing the component Header
+import Footer from './Components/footer';
+import NavigationBar from './Components/navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  return (//removed 
-    <div className="App">
-      <Content></Content>
+  return (//removed default content from react
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/home" element={<Content />} />
+        <Route path="/read" element={<h1>Read Component</h1>} />
+        <Route path="/create" element={<h1>Create Component</h1>} />
+      </Routes>
+      <Footer />
+    </Router>
 
-      <h1>Hello world!</h1>
-      <h2>It is {new Date().toLocaleTimeString()}</h2>
-    </div>
-  );
+    
+    
+  );//returning the html like content
 }
 
 export default App;

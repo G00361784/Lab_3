@@ -1,5 +1,5 @@
 import React from "react";
-const Content = ()=>{
+const Content = ()=>{//declaring arrow function called content
     return(
         <div>
             <h1>Hello World!</h1>
