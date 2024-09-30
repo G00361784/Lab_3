@@ -1,7 +1,7 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const NavigationBar = () => {
+const NavigationBar = () => {//Using Arrow functions
   return (
     <Navbar bg="light" expand="lg">
       <Navbar.Brand href="#">React App</Navbar.Brand>
