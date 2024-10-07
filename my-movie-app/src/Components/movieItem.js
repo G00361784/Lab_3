@@ -15,7 +15,7 @@ import { useEffect } from "react";
 import Card from 'react-bootstrap/Card';
 
 function MovieItem(props) {
-  useEffect(() => {
+  useEffect(() => {//like constuctor
     console.log("Movie Item:", props.myMovie);
   }, [props.myMovie]); // Only run this effect when the mymovie prop changes
 
